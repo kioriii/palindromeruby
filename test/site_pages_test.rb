@@ -12,15 +12,18 @@ class PalindromeAppTest < Minitest::Test
     get '/'
     assert last_response.ok?
       # Because the get request automatically creates a last_response object, you can check if the page exists by looking for the last_response object.
+    assert doc(last_response).at_css('h1')
   end
 
   def test_about
     get '/about'
     assert last_response.ok?
+    assert doc(last_response).at_css('h1')
   end
 
   def test_palindrome
     get '/palindrome'
     assert last_response.ok?
+    assert doc(last_response).at_css('h1')
   end
 end

@@ -5,7 +5,7 @@ require 'sinatra'
 # end
 
 get '/' do
-  erb :index
+  erb :index #,:layout => :page
 end
 
 get '/about' do
