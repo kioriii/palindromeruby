@@ -6,6 +6,7 @@ gem 'sinatra'
 gem 'puma'
 gem 'rerun'
 gem "rackup", "~> 2.3"
+gem "mhartl_palindrome"
 
 group :test do
   gem 'minitest'
