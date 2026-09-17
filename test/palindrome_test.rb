@@ -10,7 +10,7 @@ class PalindromeAppTest < Minitest::Test
   def test_form_presence
     get '/palindrome'
     assert doc(last_response).at_css('form')
-end
+  end
 
   def test_non_palindrome_submission
     post '/check', phrase: "Not a palindrome"
